@@ -2,6 +2,12 @@
 
 This repo contains latest official Docker image of [Nginx Alpine](https://hub.docker.com/_/nginx/) with [HTTP Redis](https://www.nginx.com/resources/wiki/modules/redis/) module compiled in.
 
+Usage:
+
+```shell
+docker run -d -v ./nginx.conf:/etc/nginx/conf.d/default.conf:ro stepankuzmin/nginx-redis
+```
+
 Example configuration:
 
 ```nginx
