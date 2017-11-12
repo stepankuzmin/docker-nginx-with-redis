@@ -5,7 +5,7 @@ This repo contains latest official Docker image of [Nginx Alpine](https://hub.do
 Usage:
 
 ```shell
-docker run -d -v ./nginx.conf:/etc/nginx/conf.d/default.conf:ro stepankuzmin/nginx-redis
+docker run -d -v ./nginx.conf:/etc/nginx/conf.d/default.conf:ro stepankuzmin/nginx-with-redis
 ```
 
 Example configuration:
@@ -25,3 +25,5 @@ server {
     }
 }
 ```
+
+**Note**: The backend should set the data in redis. The redis key is `/uri?args`.
